@@ -13,14 +13,20 @@ import 'package:nirva_app/hive_helper.dart';
 import 'package:nirva_app/url_configuration.dart';
 
 class NirvaAPI {
-  // 服务器地址
-  static const String serverAddress = '192.168.192.122';
+  // 服务器地址 localNetworkServerAddress
+  static const String localNetworkServerAddress = '192.168.192.104';
+  static const String devAWSServerAddress = '34.229.128.139';
 
   // 基础端口号
-  static const int basePort = 8001;
+  static const int basePort = 8000;
 
-  // 开发环境的 HTTP URL
-  static const String devHttpUrl = 'http://$serverAddress:$basePort';
+  // 开发环境的 HTTP URL，局域网。
+  static const String devLocalHostHttpUrl =
+      'http://$localNetworkServerAddress:$basePort';
+
+  // 开发环境的 HTTP URL, 外网。
+  static const String devAwsServerHttpUrl =
+      'http://$devAWSServerAddress:$basePort';
 
   // url 配置
   static final URLConfiguration _urlConfig = URLConfiguration();
@@ -28,7 +34,7 @@ class NirvaAPI {
   // 静态 Dio 实例
   static final Dio _dio = Dio(
       BaseOptions(
-        baseUrl: devHttpUrl,
+        baseUrl: devAwsServerHttpUrl,
         connectTimeout: const Duration(seconds: 5),
         receiveTimeout: const Duration(seconds: 30),
       ),
