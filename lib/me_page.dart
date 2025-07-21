@@ -50,9 +50,9 @@ class _MePageState extends State<MePage> {
                 ),
               ),
 
-              // const SizedBox(height: 16),
-              // _buildHardwareCard(), // Nirva Necklace 卡片
-              // const SizedBox(height: 16),
+              const SizedBox(height: 16),
+              _buildHardwareCard(), // Nirva Necklace 卡片
+              const SizedBox(height: 16),
 
               // 设置选项卡片
               Card(
@@ -62,33 +62,33 @@ class _MePageState extends State<MePage> {
                 elevation: 2,
                 child: Column(
                   children: [
-                    // _buildSettingsOption(
-                    //   icon: Icons.restart_alt,
-                    //   title: 'Onboarding',
-                    //   subtitle: 'Restart the setup process',
-                    //   onTap: () {
-                    //     debugPrint('Onboarding tapped');
-                    //   },
-                    // ),
-                    // const Divider(height: 1),
-                    // _buildSettingsOption(
-                    //   icon: Icons.access_time,
-                    //   title: 'Reflection Time',
-                    //   subtitle: 'Set when you want daily reflections',
-                    //   onTap: () {
-                    //     debugPrint('Reflection Time tapped');
-                    //   },
-                    // ),
-                    // const Divider(height: 1),
-                    // _buildSettingsOption(
-                    //   icon: Icons.privacy_tip,
-                    //   title: 'Privacy Controls',
-                    //   subtitle: 'Manage your data and sharing preferences',
-                    //   onTap: () {
-                    //     debugPrint('Privacy Controls tapped');
-                    //   },
-                    // ),
-                    // const Divider(height: 1),
+                    _buildSettingsOption(
+                      icon: Icons.restart_alt,
+                      title: 'Onboarding',
+                      subtitle: 'Restart the setup process',
+                      onTap: () {
+                        debugPrint('Onboarding tapped');
+                      },
+                    ),
+                    const Divider(height: 1),
+                    _buildSettingsOption(
+                      icon: Icons.access_time,
+                      title: 'Reflection Time',
+                      subtitle: 'Set when you want daily reflections',
+                      onTap: () {
+                        debugPrint('Reflection Time tapped');
+                      },
+                    ),
+                    const Divider(height: 1),
+                    _buildSettingsOption(
+                      icon: Icons.privacy_tip,
+                      title: 'Privacy Controls',
+                      subtitle: 'Manage your data and sharing preferences',
+                      onTap: () {
+                        debugPrint('Privacy Controls tapped');
+                      },
+                    ),
+                    const Divider(height: 1),
                     _buildSettingsOption(
                       icon: Icons.upload,
                       title: 'Update Data',
@@ -119,14 +119,14 @@ class _MePageState extends State<MePage> {
                       },
                     ),
                     const Divider(height: 1),
-                    // _buildSettingsOption(
-                    //   icon: Icons.settings,
-                    //   title: 'Nirva Settings',
-                    //   subtitle: 'Customize Nirva\'s voice',
-                    //   onTap: () {
-                    //     debugPrint('Nirva Settings tapped');
-                    //   },
-                    // ),
+                    _buildSettingsOption(
+                      icon: Icons.settings,
+                      title: 'Nirva Settings',
+                      subtitle: 'Customize Nirva\'s voice',
+                      onTap: () {
+                        debugPrint('Nirva Settings tapped');
+                      },
+                    ),
                   ],
                 ),
               ),

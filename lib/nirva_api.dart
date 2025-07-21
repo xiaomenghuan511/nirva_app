@@ -15,7 +15,7 @@ import 'package:nirva_app/url_configuration.dart';
 class NirvaAPI {
   // 服务器地址 localNetworkServerAddress
   static const String localNetworkServerAddress = '192.168.192.104';
-  static const String devAWSServerAddress = '34.229.128.139';
+  static const String devAWSServerAddress = '52.73.87.226';
 
   // 基础端口号
   static const int basePort = 8000;
